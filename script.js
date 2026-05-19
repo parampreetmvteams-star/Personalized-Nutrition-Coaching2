@@ -44,3 +44,5 @@ const navContent = document.getElementById('nav-content');
 hamburger.addEventListener('click', () => {
     navContent.classList.toggle('open');
 });
+
+
