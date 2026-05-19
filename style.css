@@ -343,6 +343,13 @@ section {
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.blogs-flex img:hover {
+    /* border-color: var(--bg-dark-green); */
+    color: var(--bg-dark-green);
+    background-color: var(--border-light);
 }
 
 .blogs-people-detail h6 {
@@ -440,13 +447,14 @@ section {
     background-color: var(--light-green);
     color: var(--border-light);
     padding: 1.5rem;
-    transition: border-color 0.2s;
+    transition: all 0.2s;
     position: static !important;
 }
 
 .carousel-arrow:hover {
     border-color: var(--bg-dark-green);
     color: var(--bg-dark-green);
+    background-color: var(--border-light);
 }
 
 .dots { 
@@ -673,7 +681,7 @@ section {
 .footer-contact {
     display: flex;
     gap: 28px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -688,6 +696,7 @@ section {
     transition: color 0.2s;
     border: 2px solid #2C5446;
     padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .footer-contact a:hover { 
@@ -924,7 +933,7 @@ section {
     }
 
     .pricing { 
-        padding: 50px 16px 60px; 
+        /* padding: 50px 16px 60px;  */
     }
 
     .pricing-grid {
@@ -932,7 +941,9 @@ section {
         gap: 16px;
     }
 
-    .toggle-wrap { gap: 4px; }
+    .toggle-wrap { 
+        gap: 4px; 
+    }
 
     /* ---- Footer ---- */
     .footer-main {
@@ -943,8 +954,8 @@ section {
     }
 
     .footer-nav {
-        flex-direction: column;
-        gap: 12px;
+        /* flex-direction: column; */
+        /* gap: 12px; */
     }
 
     .footer-bottom {
@@ -956,6 +967,7 @@ section {
 
     .footer-contact {
         flex-direction: column;
+        width: 100%;
         gap: 10px;
     }
 }
@@ -1080,6 +1092,9 @@ section {
     .footer-main { 
         padding: 20px 16px; 
     }
+    .footer-nav {
+        /* flex-direction: row; */
+    }
     .footer-bottom { 
         padding: 14px 16px; 
     }
@@ -1087,7 +1102,9 @@ section {
         font-size: 1.05rem; 
     } */
     .footer-copy { 
-        font-size: 0.82rem; 
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
     .go-top-btn { 
         width: 32px; 
