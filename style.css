@@ -1,4 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+}
 
+:root {
+    --bg-dark-green: #1A3129;
+    --bg-green : #CBEA7B; 
+    --light-green: #F6FBE9;
+    --text-dark : #262626; 
+    --text-light: #FAFDF2;
+    --white: #fff;
+    --bg-medium: #234338;
+    --border :#2C5446;
+    --border-light : #E5F5BD;
+    --small-text : 1.13rem;
+    --text-heading : 3rem;
+}
+
+a { 
+    text-decoration: none; 
+}
+
+h2 {
+    font-size: var(--text-heading);
+    color: var(--text-dark);
+}
+
+p {
+    color: #333333;
+    font-size: var(--small-text);
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    /* padding: 0 1rem; */
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 /* HERO */
 .hero-section {
     display: flex;
@@ -388,6 +433,7 @@
     display: flex;
     /* gap: 2rem; */
     flex-direction: column;
+    height: fit-content;
 }
 
 .pricing-card .plan-name {
@@ -422,7 +468,6 @@
     font-weight: 800;
     color: var(--bg-medium);
 }
-
 
 .price .period {
     font-size: var(--small-text);

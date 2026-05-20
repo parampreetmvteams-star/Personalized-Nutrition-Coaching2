@@ -80,9 +80,9 @@ button {
     transform: rotate(180deg);
 }
 
-/* .hamburger{
+.hamburger{
     display: none;
-} */
+}
 
 
 .nav-top-arrow { 
@@ -157,6 +157,42 @@ button {
 .contact-us:hover { 
     background-color: var(--border-light);
  }
+
+ /* heading-section  */
+.main-section{
+    padding-top: 5rem;
+}
+.heading-section{
+    background-color: var(--light-green);
+    border: 1px solid var(--border-light);
+    /* margin-top: 5rem; */
+    padding: 0 5rem 5rem 5rem;
+}
+.heading-image{
+    width: 40%;
+    /* height: 90%; */
+    margin: auto;
+    background-image: url(images/pricing-image/hero-bg.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.heading-image img{
+   /* width: 100%; */
+}
+.heading-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading-content p{
+    max-width: 1396px;
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
 
 
 /*
@@ -306,7 +342,7 @@ button {
         background: var(--bg-dark-green);
         flex-direction: column;
         align-items: flex-start;
-        padding: 1.5rem 1.5rem;
+        padding: 2rem 3rem;
         gap: 1.5rem;
         border-top: 1px solid var(--border);
         z-index: 100;

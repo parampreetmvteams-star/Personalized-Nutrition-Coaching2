@@ -49,53 +49,19 @@ section {
     background-color: var(--text-light); 
 }
 
-/* heading-section  */
-.main-section{
-    padding-top: 5rem;
-}
-.heading-section{
-    background-color: var(--light-green);
-    border: 1px solid var(--border-light);
-    /* margin-top: 5rem; */
-    padding: 0 5rem 5rem 5rem;
-}
-.heading-image{
-    width: 40%;
-    /* height: 90%; */
-    margin: auto;
-    background-image: url(images/pricing-image/hero-bg.svg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem;
-}
-.heading-image img{
-   /* width: 100%; */
-}
-.heading-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.heading-content p{
-    max-width: 1396px;
-    margin-top: 1.5rem;
-    text-align: center;
-    line-height: 1.5;
-}
+
 .pricing-card .plan-desc2 {
     font-size: var(--small-text);
     color: var(--text-dark);
     line-height: 1.6;
     margin: 2rem 0;
-    border:2px solid #E5F5BD;
+    border:2px solid var(--border-light);
     background-color: #EEF8D3;
     border-radius: 8px;
 }
 .pricing-card .plan-desc2 p{
     padding: 1rem;
-    border-bottom: 2px solid #E5F5BD;
+    border-bottom: 2px solid var(--border-light);
 }
 .pricing-card .Ultimate-plan-desc {
     font-size: var(--small-text);
@@ -120,7 +86,7 @@ section {
     /* gap: 1.2rem; */
     background-color: var(--light-green);
     padding: 4rem 2rem 2rem 2rem;
-    border: 1.8px solid #E5F5BD;
+    border: 1.8px solid var(--border-light);
     border-radius: 10px;
 }
 .free-plan h4{
@@ -155,13 +121,13 @@ section {
     gap:2rem;
     max-width: 30rem;
     width: 30rem;
-    border-right: 1.8px solid #E5F5BD;
+    border-right: 1.8px solid var(--border-light);
 }
 .free-box p{
     font-size: 1.25rem;
     flex: 1;
     padding-left: 1.5rem;
-    border-bottom: 1.8px solid #E5F5BD;
+    border-bottom: 1.8px solid var(--border-light);
     padding: 1rem;
 }
 .free-box p:last-child{
@@ -172,12 +138,12 @@ section {
     flex-direction: column;
     align-items: center;
     /* gap:2rem; */
-    border-right: 1.8px solid #E5F5BD;
+    border-right: 1.8px solid var(--border-light);
 } 
 
 .check-box{
     width: 100%;
-    border-bottom: 1.8px solid #E5F5BD;
+    border-bottom: 1.8px solid var(--border-light);
     padding: 3rem;
 }
 .check-box:last-child{
@@ -204,42 +170,52 @@ section {
 .faq{
     padding: 4rem 0;
 }
-.faq-heading{
+.faq-heading h2{
     text-align: center;
 }
 .faq-heading .faq-para{
     max-width: 996px;
     margin: auto;
     margin-top: 1rem;
+    text-align: center;
 }
 .faq-content{
     display: flex;
-    margin: 2rem 0;
+    margin: 4rem 0;
     gap: 2rem;
     
 }
 .faq-bg{
     background-color: var(--light-green);
-    border: 1.8px solid #E5F5BD;
+    border: 1.8px solid var(--border-light);
     padding: 2rem;
     border-radius: 10px;
 }
 .faq-qus{
     justify-content: space-between;
     display: flex;
-    border-bottom: 2px solid #E5F5BD;
+    border-bottom: 2px solid var(--border-light);
     padding: 1.5rem 2rem;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
 }
 .faq-qus:last-child{
     border-bottom: none;
 }
+.qus-ans{
+    max-width: 800px;
+    align-items: center;
+}
 .qus-ans h3{
     font-size: 1.25rem;
+    font-weight: 600;
 }
-.qus-para p{
+.faq-qus .qus-para{
     margin: 1rem 0;
+    display: none;
+}
+.faq-qus.active .qus-para{
+    display: block;
 }
 .qus-ans p{
     font-size: 1.13rem;
@@ -247,11 +223,28 @@ section {
     line-height: 1.5;
 }
 .ask-your-qus{
+    height: fit-content;
     background-color: var(--light-green);
-    border: 1.8px solid #E5F5BD;
+    border: 1.8px solid var(--border-light);
+}
+.faq-icon{
+    background-image: url(images/pricing-image/faq-plus-icon.svg);
+    width: 15px;
+    height: 15px;
+    font-size: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.faq-qus.active .faq-icon{
+    background-image: url(images/pricing-image/cross-icon.svg);
+    width: 15px;
+    height: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .faq-cross-icon{
     background-color: var(--bg-medium);
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,7 +259,7 @@ section {
 .ask-your-qus{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     border-radius: 10px;
     padding: 4.9rem;
@@ -274,9 +267,15 @@ section {
 .ask-your-qus h4{
     font-size: 2.13rem;
     color: var(--bg-medium);
+    margin-top: 1.8rem;
+    text-align: center;
 }
 .ask-your-qus p{
     text-align: center;
+}
+.qus-center{
+    display: flex;
+    align-items: center;
 }
 .ask-btn{
     background-color: var(--bg-green);
@@ -285,7 +284,8 @@ section {
     color:var(--text-dark);
     border-radius: 10px;
     font-weight: 600;
-     transition: all 0.2s ease;
+    margin-top: 1.8rem;
+    transition: all 0.2s ease;
 }
 .ask-btn:hover {
     background: var(--border);

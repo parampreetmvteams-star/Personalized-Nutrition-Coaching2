@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="nav-bg">
@@ -44,7 +46,7 @@
                     <div class="nav-items">
                         <a href="index.html" >Home</a>
                         <a href="">About</a>
-                        <a href="#">Team</a>
+                        <a href="teams.html">Team</a>
                         <a href="#">Process</a>
                         <a href="pricing.html" class="active">Pricing</a>
                         <a href="#">Blog</a>
@@ -320,63 +322,80 @@
     <section class="faq">
         <div class="container">
             <div class="faq-heading">
-                    <h2>FAQ</h2>
-                    <p class="faq-para">We address commonly asked questions and provide comprehensive answers to help you navigate your way through your nutrition and wellness journey.</p>
+                <h2 >FAQ</h2>
+                <p class="faq-para">We address commonly asked questions and provide comprehensive answers to help you navigate your way through your nutrition and wellness journey.</p>
                 <div class="faq-content">
                     <div class="faq-bg">
                         <div class="faq-qus">
-                        <div class="qus-ans qus-para">
-                            <h3>What is personalized nutrition coaching?</h3>
-                            <p>Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements. Our team of experts will work closely with you to develop a plan that fits your lifestyle and helps you achieve optimal health and wellness.</p>
+                        <div class="qus-center">
+                            <div class="qus-ans" >
+                                <h3>What is personalized nutrition coaching?</h3>
+                                <p class="qus-para " id="faq_1">Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements. Our team of experts will work closely with you to develop a plan that fits your lifestyle and helps you achieve optimal health and wellness.</p>
+                            </div>
                         </div>
-                        <div class="faq-cross-icon">
-                            <img src="images/pricing-image/faq-cross-icon.svg" alt="">
-                        </div>
+                        <button class="faq-cross-icon">
+                            <div class="faq-icon"></div>
+                        </button>
                     </div>
 
                     <div class="faq-qus">
-                        <div class="qus-ans">
-                            <p>How can nutrition coaching help me lose weight?</p>
+                        <div class="qus-center">
+                            <div class="qus-ans">
+                            <h3>How can nutrition coaching help me lose weight?</h3>
+                            <p class="qus-para " id="faq_2">Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements.</p>
                         </div>
-                        <div class="faq-cross-icon">
-                            <img src="images/pricing-image/faq-plus-icon.svg" alt="">
                         </div>
+                        <button class="faq-cross-icon">
+                            <div class="faq-icon"></div>
+                        </button>
                     </div>
 
                     <div class="faq-qus">
-                        <div class="qus-ans">
-                            <p>Can I still enjoy my favorite foods while on a nutrition plan?</p>
+                        <div class="qus-center">
+                            <div class="qus-ans">
+                            <h3>Can I still enjoy my favorite foods while on a nutrition plan?</h3>
+                            <p class="qus-para " id="faq_3">Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements.</p>
                         </div>
-                        <div class="faq-cross-icon">
-                            <img src="images/pricing-image/faq-plus-icon.svg" alt="">
                         </div>
+                        <button class="faq-cross-icon">
+                            <div class="faq-icon"></div>
+                        </button>
                     </div>
 
                     <div class="faq-qus">
-                        <div class="qus-ans">
-                            <p>How often will I have contact with my nutritionist?</p>
+                        <div class="qus-center">
+                            <div class="qus-ans">
+                            <h3>How often will I have contact with my nutritionist?</h3>
+                            <p class="qus-para ">Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements.</p>
                         </div>
-                        <div class="faq-cross-icon">
-                            <img src="images/pricing-image/faq-plus-icon.svg" alt="">
                         </div>
+                        <button class="faq-cross-icon">
+                            <div class="faq-icon"></div>
+                        </button>
                     </div>
 
                     <div class="faq-qus">
-                        <div class="qus-ans">
-                            <p>How long will it take to see results?</p>
+                        <div class="qus-center">
+                            <div class="qus-ans">
+                                <h3>How long will it take to see results?</h3>
+                                <p class="qus-para ">Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements.</p>
+                            </div>
                         </div>
-                        <div class="faq-cross-icon">
-                            <img src="images/pricing-image/faq-plus-icon.svg" alt="">
-                        </div>
+                        <button class="faq-cross-icon">
+                            <div class="faq-icon"></div>
+                        </button>
                     </div>
 
                     <div class="faq-qus">
-                        <div class="qus-ans">
-                            <p>Are the meal plans and recipes provided suitable for vegetarians or vegans?</p>
+                        <div class="qus-center">
+                            <div class="qus-ans">
+                                <h3>Are the meal plans and recipes provided suitable for vegetarians or vegans?</h3>
+                                <p class="qus-para ">Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements.</p>
+                            </div>
                         </div>
-                        <div class="faq-cross-icon">
-                            <img src="images/pricing-image/faq-plus-icon.svg" alt="">
-                        </div>
+                        <button class="faq-cross-icon">
+                            <div class="faq-icon"></div>
+                        </button>
                     </div>
                 </div>
 
@@ -402,7 +421,7 @@
             <nav class="footer-nav">
                 <a href="#">Home</a>
                 <a href="#">About</a>
-                <a href="#">Team</a>
+                <a href="teams.html">Team</a>
                 <a href="#">Process</a>
                 <a href="pricing.html">Pricing</a>
                 <a href="#">Blog</a>
@@ -436,5 +455,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
 </body>
 </html>
