@@ -31,9 +31,9 @@
         <!-- NAVBAR -->
         <nav class="container">
             <div class="nav-section">
-                <figure class="nav-logo">
+                <a href="index.html" class="nav-logo">
                     <img src="images/Logo.svg" alt="">
-                </figure>
+                </a>
 
                 <!-- Hamburger button -->
                 <button class="hamburger" id="hamburger">
@@ -43,7 +43,7 @@
                 <div class="nav-content" id="nav-content">
                     <div class="nav-items">
                         <a href="index.html" >Home</a>
-                        <a href="about.html">About</a>
+                        <a href="">About</a>
                         <a href="#">Team</a>
                         <a href="#">Process</a>
                         <a href="pricing.html" class="active">Pricing</a>
@@ -71,15 +71,15 @@
     </section>
 
     <!-- pricing section  -->
-    <section class="pricing">
+    <section class="pricing pricing-mobile">
             <div class="container">
                 <div class="toggle-wrap">
-                    <button class="toggle-btn active">Monthly</button>
-                    <button class="toggle-btn" >Yearly</button>
+                    <button class="toggle-btn active" id="monthly">Monthly</button>
+                    <button class="toggle-btn" id="yearly">Yearly</button>
                 </div>
                 <p class="save-badge">Save 50% on Yearly</p>
 
-                <div class="pricing-grid">
+                <div class="pricing-grid pricing-mobile">
                     <div class="pricing-card">
                         <div class="plan-name">Basic Plan</div>
                         <div class="plan-sub">Up to 50% off on Yearly Plan</div>
@@ -321,7 +321,7 @@
         <div class="container">
             <div class="faq-heading">
                     <h2>FAQ</h2>
-                    <P>We address commonly asked questions and provide comprehensive answers to help you navigate your way through your nutrition and wellness journey.</P>
+                    <p class="faq-para">We address commonly asked questions and provide comprehensive answers to help you navigate your way through your nutrition and wellness journey.</p>
                 <div class="faq-content">
                     <div class="faq-bg">
                         <div class="faq-qus">
@@ -378,7 +378,8 @@
                             <img src="images/pricing-image/faq-plus-icon.svg" alt="">
                         </div>
                     </div>
-                    </div>
+                </div>
+
                     <div class="ask-your-qus">
                         <img src="images/pricing-image/faq-logo.svg" alt="">
                         <h4>Ask your question</h4>
@@ -418,14 +419,14 @@
 
         <div class="footer-bottom">
             <div class="footer-contact">
-                <a href="mailto:hello@squareup.com">
+                <a href="">
                     <span class="icon">
                     <img src="images/email.svg" alt="">
                 </span> hello@squareup.com</a>
-                <a href="tel:+919813232309"><span class="icon">
+                <a href=""><span class="icon">
                     <img src="images/contact.svg" alt="">
                 </span> +91 98132 23209</a>
-                <a href="#"><span class="icon">
+                <a href=""><span class="icon">
                     <img src="images/location.svg" alt="">
                 </span> Somewhere in the World</a>
             </div>
@@ -433,5 +434,7 @@
         </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

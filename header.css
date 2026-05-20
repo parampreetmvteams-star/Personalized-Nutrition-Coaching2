@@ -80,9 +80,9 @@ button {
     transform: rotate(180deg);
 }
 
-.hamburger{
+/* .hamburger{
     display: none;
-}
+} */
 
 
 .nav-top-arrow { 
@@ -105,6 +105,10 @@ button {
     padding: 1rem;
     background-color: var(--bg-dark-green);
     position: relative;
+}
+
+.nav-logo{
+    cursor: pointer;
 }
 
 .nav-section {
@@ -154,10 +158,6 @@ button {
     background-color: var(--border-light);
  }
 
-
-section { 
-    background-color: var(--text-light); 
-}
 
 /*
    FOOTER */
@@ -260,4 +260,117 @@ section {
 .footer-copy {
     color: var(--white);
     font-size: var(--small-text);
+}
+
+@media (max-width: 1024px) {
+
+    :root {
+        --text-heading: 1.73rem;
+        --small-text: 1rem;
+    }
+
+    /* Nav */
+    .nav-top::before,
+    .nav-top::after {
+        width: 6rem;
+    }
+
+    /* footer  */
+    .footer-main { 
+        padding: 24px 28px; gap: 20px;
+    }
+    .footer-bottom { 
+        padding: 16px 28px; 
+    }
+    .footer-nav { 
+        gap: 18px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-top::before,
+    .nav-top::after { 
+        display: none; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    .nav-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-dark-green);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 1.5rem;
+        gap: 1.5rem;
+        border-top: 1px solid var(--border);
+        z-index: 100;
+    }
+
+    .nav-content.open { 
+        display: flex; 
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .nav-items a { 
+        font-size: 1.05rem; 
+    }
+
+    /* ---- Footer ---- */
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+        gap: 16px;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px){
+     .nav-top-arrow{
+        padding-left: 0;
+    }
+    .nav-top p{
+        font-size: 14px;
+    }
+    .footer-main { 
+        padding: 20px 16px; 
+    }
+    .footer-nav {
+        /* flex-direction: row; */
+    }
+    .footer-bottom { 
+        padding: 14px 16px; 
+    }
+    .footer-copy { 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .go-top-btn { 
+        width: 32px; 
+        height: 32px; 
+        font-size: 0.9rem; 
+    }
 }

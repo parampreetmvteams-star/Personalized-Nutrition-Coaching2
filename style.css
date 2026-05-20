@@ -348,6 +348,7 @@
     margin: auto;
     padding: 0.5rem;
     border-radius: 10px;
+    gap:0.5rem;
 }
 
 .toggle-btn {
@@ -446,21 +447,17 @@
 }
 
 
-
-
 /* responsive  */
 @media (max-width: 1600px){
+    .container{
+        padding: 0 2rem;
+    }
     .hero-section img{
         max-width: 700px;
         object-fit: cover;
     }
 }
-/* @media (max-width: 1300px){
-    .hero-section img{
-        max-width: 600px;
-        object-fit: cover;
-    }
-} */
+
 @media (max-width: 1200px){
     .hero-section img{
         max-width: 500px;
@@ -482,20 +479,7 @@
         --small-text: 1rem;
     }
 
-    /* Nav */
-    .nav-top::before,
-    .nav-top::after {
-        width: 6rem;
-    }
-
-    /* Hero */
-    .hero-section { 
-        /* flex-direction: column;  */
-    }
-    /* .hero-section img{
-        max-width: 400px;
-        object-fit: cover;
-    } */
+    /* hero      */
     .hero-content { 
         padding: 3rem 2.5rem; 
         gap: 1.5rem; 
@@ -516,32 +500,19 @@
     /* Testimonials */
     .testimonial-grid { 
         grid-template-columns: repeat(3, 1fr);
-     }
+    }
     
     .pricing-grid { 
         grid-template-columns: repeat(3, 1fr); 
     }
-    .pricing { 
-        /* padding: 60px 24px 70px;  */
-    }
-
-    /* Footer */
-    .footer-main { 
-        padding: 24px 28px; gap: 20px;
-     }
-    .footer-bottom { 
-        padding: 16px 28px; 
-    }
-    .footer-nav { 
-        gap: 18px; 
-    }
+    
 }
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){
     .hero-section img{
         max-width: 380px;
         object-fit: cover;
     }
-}
+} */
 @media (max-width: 900px){
     .hero-section img{
         max-width: 380px;
@@ -560,43 +531,6 @@
 }
 /*   768px  */
 @media (max-width: 768px) {
-
-    .nav-top::before,
-    .nav-top::after { 
-        display: none; 
-    }
-
-    .hamburger {
-        display: flex; 
-    }
-
-    .nav-content {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--bg-dark-green);
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1.5rem 1.5rem;
-        gap: 1.5rem;
-        border-top: 1px solid var(--border);
-        z-index: 100;
-    }
-
-    .nav-content.open { 
-        display: flex; 
-    }
-
-    .nav-items {
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-
-    .nav-items a { 
-        font-size: 1.05rem; 
-    }
 
     .hero-section { 
         flex-direction: column; 
@@ -656,71 +590,33 @@
         gap: 1.2rem;
     }
 
-    .testimonials { 
-        /* padding: 50px 16px;  */
-    }
-
     .testimonial-grid {
         grid-template-columns: 1fr;
         gap: 16px;
     }
 
-    .pricing { 
-        /* padding: 50px 16px 60px;  */
-    }
-
     .pricing-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
 
     .toggle-wrap { 
         gap: 4px; 
     }
-
-    /* ---- Footer ---- */
-    .footer-main {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 24px 20px;
-        gap: 20px;
-    }
-
-    .footer-nav {
-        /* flex-direction: column; */
-        /* gap: 12px; */
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px 20px;
+}
+@media(max-width: 600px){
+    .pricing-grid {
+        grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
-
-    .footer-contact {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
 }
-
 /*  Mobile: 480px  */
 @media (max-width: 480px) {
 
     .reviewer{
         padding: 1rem;
     }
-
-    .nav-border { 
-        /* display: none;  */
-    }
-    .nav-top-arrow{
-        padding-left: 0;
-    }
-    .nav-top p{
-        font-size: 14px;
-    }
+   
     /* Hero */
     
     .hero-content { 
@@ -802,8 +698,6 @@
         display: flex;
         gap: 1rem;
         padding-left: 10rem;
-        /* align-items: end; */
-        /* justify-content: end; */
     }
     .blogs-people-detail h6{
         font-size: 1rem;
@@ -820,26 +714,5 @@
     .testimonial-card .quote {
         padding: 1rem;
     }
-    .footer-main { 
-        padding: 20px 16px; 
-    }
-    .footer-nav {
-        /* flex-direction: row; */
-    }
-    .footer-bottom { 
-        padding: 14px 16px; 
-    }
-    /* .footer-logo { 
-        font-size: 1.05rem; 
-    } */
-    .footer-copy { 
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .go-top-btn { 
-        width: 32px; 
-        height: 32px; 
-        font-size: 0.9rem; 
-    }
+    
 }

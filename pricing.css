@@ -140,7 +140,7 @@ section {
     font-size: 1.38rem;
     color: var(--white);
     background-color: var(--bg-medium);
-    padding: 1.5rem;
+    padding: 1.5rem 0.2rem;
     width: 90%;
     text-align: center;
     border-radius: 8px;
@@ -153,6 +153,7 @@ section {
     display: flex;
     flex-direction: column;
     gap:2rem;
+    max-width: 30rem;
     width: 30rem;
     border-right: 1.8px solid #E5F5BD;
 }
@@ -206,7 +207,7 @@ section {
 .faq-heading{
     text-align: center;
 }
-.faq-heading p{
+.faq-heading .faq-para{
     max-width: 996px;
     margin: auto;
     margin-top: 1rem;
@@ -290,3 +291,38 @@ section {
     background: var(--border);
     color: var(--white);
 }
+@media(max-width:1600px){
+
+    .container{
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width:1000px){
+
+    .free-plan{
+        overflow-x: scroll;
+        /* scrollbar-color: var(--bg-dark-green) var(--border-light); */
+    }
+    .free-plan::-webkit-scrollbar {
+        width: 10px;
+    }
+    .free-plan::-webkit-scrollbar-thumb{
+        background-color: var(--bg-green);
+        /* width: 50px; */
+    }
+    .pricing-mobile{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width:800px){
+    .faq-content{
+        flex-direction: column;
+    }
+}
+@media(max-width: 678px){
+    .pricing-mobile{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+

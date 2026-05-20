@@ -1,4 +1,24 @@
- var swiper = new Swiper(".mySwiper", {
+const hamburger = document.getElementById('hamburger');
+const navContent = document.getElementById('nav-content');
+const monthlyPricing = document.getElementById('monthly');
+const yearlyPricing = document.getElementById('yearly')
+
+hamburger.addEventListener('click', () => {
+    navContent.classList.toggle('open');
+});
+
+monthlyPricing.addEventListener('click', () => {
+    monthlyPricing.classList.add('active');
+    yearlyPricing.classList.remove('active');
+});
+yearlyPricing.addEventListener('click', () => {
+    yearlyPricing.classList.add('active');
+    monthlyPricing.classList.remove('active');
+});
+
+
+
+var swiper = new Swiper(".mySwiper", {
       loop: true,
       slidesPerView: 3,
       spaceBetween: 30,
@@ -38,11 +58,6 @@
   },
 });
 
-const hamburger = document.getElementById('hamburger');
-const navContent = document.getElementById('nav-content');
 
-hamburger.addEventListener('click', () => {
-    navContent.classList.toggle('open');
-});
 
 
