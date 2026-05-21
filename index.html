@@ -333,22 +333,24 @@
         </section>
 
         <!-- PRICING SECTION -->
-        <section class="pricing">
+        <section class="pricing pricing-mobile">
             <div class="container">
-                <h2>Our Pricing</h2>
-                <p class="pricing-para">We outline our flexible and affordable options to support you on your journey to optimal health and nutrition. We believe that everyone deserves access to personalised nutrition guidance and resources.</p>
-
                 <div class="toggle-wrap">
-                    <button class="toggle-btn active" id="monthly">Monthly</button>
-                    <button class="toggle-btn" id="yearly">Yearly</button>
+                    <button data-tab="monthly" class="toggle-btn active monthly">Monthly</button>
+                    <button data-tab="yearly" class="toggle-btn  monthly">Yearly</button>
                 </div>
-                <p class="save-badge">Save 50% on Yearly</p>
+                <p class="save-badge">Save 50% on <span id="disc-yearly">Yearly</span></p>
 
-                <div class="pricing-grid">
+                <div class="pricing-grid pricing-grid-detail pricing-mobile" data-tab="yearly">
                     <div class="pricing-card">
                         <div class="plan-name">Basic Plan</div>
                         <div class="plan-sub">Up to 50% off on Yearly Plan</div>
-                        <p class="plan-desc">Get started on your health journey with our Basic Plan. It includes personalised nutrition coaching, access to our app, meal planning assistance, and email support.</p>
+                            <div class="plan-desc2">
+                                <p>Personalized nutrition plan tailored to your goals and dietary preferences.</p>
+                                <p>Access to our mobile app for convenient meal tracking and progress monitoring.</p>
+                                <p>Email support to address your questions and concerns.</p>
+                                <p>Regular check-ins with a dedicated nutritionist to review your progress and provide guidance.</p>
+                            </div>
                         <div class="price">
                             <span class="amount">$49</span>
                             <span class="period">/month</span>
@@ -358,7 +360,13 @@
                     <div class="pricing-card">
                         <div class="plan-name">Premium Plan</div>
                         <div class="plan-sub">Up to 50% off on Yearly Plan</div>
-                        <p class="plan-desc">Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support and personalised recipe recommendations.</p>
+                        <div class="plan-desc2">
+                                <p>All the features included in the Basic Plan.</p>
+                                <p>One-on-one video consultations with your dedicated nutritionist for more personalized guidance and support.</p>
+                                <p>Recipe recommendations and meal planning assistance.</p>
+                                <p>Priority email support for quicker responses to your inquiries.</p>
+                                <p>Educational resources and guides to deepen your understanding of nutrition and healthy habits.</p>
+                            </div>
                         <div class="price">
                             <span class="amount">$79</span>
                             <span class="period">/month</span>
@@ -368,6 +376,49 @@
                     <div class="pricing-card">
                         <div class="plan-name">Ultimate Plan</div>
                         <div class="plan-sub">Up to 50% off on Yearly Plan</div>
+                        <div class="plan-desc2">
+                                <p>All the features included in the Plus Plan.</p>
+                                <p>Unlimited access to video consultations with your dedicated nutritionist for ongoing support and accountability.</p>
+                                <p>Advanced progress tracking tools to monitor your weight, body measurements, and fitness goals.</p>
+                                <p>Customized meal plans and recipe suggestions based on your preferences and nutritional needs.</p>
+                                <p>Priority email and phone support for immediate assistance.</p>
+                            </div>
+                            <div class="Ultimate-plan-desc">
+                                <p>The Premium Plan is designed for individuals who are committed to achieving significant results and require the highest level of support and personalization.</p>
+                            </div>
+                        <div class="price">
+                            <span class="amount">$99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <button class="choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+
+
+                <div class="pricing-grid pricing-grid-detail active" data-tab="monthly">
+                    <div class="pricing-card">
+                        <div class="plan-name">Basic Plan</div>
+                        <div class="plan-sub">Up to 50% off on Monthly Plan</div>
+                        <p class="plan-desc">Get started on your health journey with our Basic Plan. It includes personalised nutrition coaching, access to our app, meal planning assistance, and email support.</p>
+                        <div class="price">
+                            <span class="amount">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <button class="choose-btn">Choose Plan</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="plan-name">Premium Plan</div>
+                        <div class="plan-sub">Up to 50% off on Monthly Plan</div>
+                        <p class="plan-desc">Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support and personalised recipe recommendations.</p>
+                        <div class="price">
+                            <span class="amount">$79</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <button class="choose-btn">Choose Plan</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="plan-name">Ultimate Plan</div>
+                        <div class="plan-sub">Up to 50% off on Monthly Plan</div>
                         <p class="plan-desc">Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.</p>
                         <div class="price">
                             <span class="amount">$99</span>
@@ -376,8 +427,10 @@
                         <button class="choose-btn">Choose Plan</button>
                     </div>
                 </div>
+
+
             </div>
-        </section>
+    </section>
 
     </main>
 

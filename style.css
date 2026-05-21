@@ -419,9 +419,42 @@ button {
 }
 
 .pricing-grid {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+}
+.pricing-grid-detail{
+    display: none;
+    
+}
+.pricing-grid-detail.active{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.pricing-card .plan-desc2 {
+    font-size: var(--small-text);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 2rem 0;
+    border:2px solid var(--border-light);
+    background-color: #EEF8D3;
+    border-radius: 8px;
+}
+.pricing-card .plan-desc2 p{
+    padding: 1rem;
+    border-bottom: 2px solid var(--border-light);
+}
+.pricing-card .Ultimate-plan-desc {
+    font-size: var(--small-text);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    background-color: var(--bg-medium);
+    border-radius: 8px;
+}
+.pricing-card .Ultimate-plan-desc p{
+    color: var(--white);
+    padding: 1rem;
 }
 
 .pricing-card {

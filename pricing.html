@@ -76,12 +76,12 @@
     <section class="pricing pricing-mobile">
             <div class="container">
                 <div class="toggle-wrap">
-                    <button class="toggle-btn active" id="monthly">Monthly</button>
-                    <button class="toggle-btn" id="yearly">Yearly</button>
+                    <button data-tab="monthly" class="toggle-btn  monthly">Monthly</button>
+                    <button data-tab="yearly" class="toggle-btn active monthly">Yearly</button>
                 </div>
-                <p class="save-badge">Save 50% on Yearly</p>
+                <p class="save-badge">Save 50% on <span id="disc-yearly">Yearly</span></p>
 
-                <div class="pricing-grid pricing-mobile">
+                <div class="pricing-grid pricing-grid-detail active pricing-mobile" data-tab="yearly">
                     <div class="pricing-card">
                         <div class="plan-name">Basic Plan</div>
                         <div class="plan-sub">Up to 50% off on Yearly Plan</div>
@@ -133,6 +133,42 @@
                         <button class="choose-btn">Choose Plan</button>
                     </div>
                 </div>
+
+
+                <div class="pricing-grid pricing-grid-detail" data-tab="monthly">
+                    <div class="pricing-card">
+                        <div class="plan-name">Basic Plan</div>
+                        <div class="plan-sub">Up to 50% off on Monthly Plan</div>
+                        <p class="plan-desc">Get started on your health journey with our Basic Plan. It includes personalised nutrition coaching, access to our app, meal planning assistance, and email support.</p>
+                        <div class="price">
+                            <span class="amount">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <button class="choose-btn">Choose Plan</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="plan-name">Premium Plan</div>
+                        <div class="plan-sub">Up to 50% off on Monthly Plan</div>
+                        <p class="plan-desc">Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support and personalised recipe recommendations.</p>
+                        <div class="price">
+                            <span class="amount">$79</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <button class="choose-btn">Choose Plan</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="plan-name">Ultimate Plan</div>
+                        <div class="plan-sub">Up to 50% off on Monthly Plan</div>
+                        <p class="plan-desc">Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.</p>
+                        <div class="price">
+                            <span class="amount">$99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <button class="choose-btn">Choose Plan</button>
+                    </div>
+                </div>
+
+
             </div>
     </section>
 
