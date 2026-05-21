@@ -52,6 +52,9 @@ section {
 }
 
 /* dept-section */
+.hide {
+    display: none;
+}
 .dept-names{
     background-color: var(--bg-medium);
     display: flex;
@@ -60,23 +63,25 @@ section {
     padding: 2rem 6rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    /* gap: 1rem; */
 }
-.dept-names h5{
+.dept-names button{
     font-size: var(--small-text);
     color: var(--white);
     font-weight: 600;
     padding: 1rem;
     line-height: 1.5;
+    cursor: pointer;
 }
-.dept-names h5.active{
+.dept-names button.active{
     border: 1px solid #356554;
     background-color: #2C5446;
     border-radius: 10px;
 }
 
 .teams-detail{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding: 4rem 0;
 }
@@ -165,9 +170,101 @@ section {
     font-weight: 600;
 }
 
-@media(max-width:1600px){
 
+@media(max-width:1600px){
     .container{
         padding: 0 2rem;
     }
+    .join-team{
+        padding: 4rem;
+    }
+}
+@media(max-width:1200px){
+    .teams-name{
+        padding: 1rem;
+    }
+    .teams-name h4{
+        font-size: 1.1rem;
+    }
+    .teams-name p{
+        margin-top: 0.4rem;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:900px){
+    .join-team{
+        padding: 3rem;
+        gap:2rem;
+    }
+    .join-team::before{
+        height: 2.5rem;
+    }
+    .join-team::after{
+        height: 4rem;
+    }
+}
+@media(max-width:830px){
+    .teams-detail{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;   
+    }
+    .dept-members{
+        margin-top: 2rem;
+    }
+}
+@media(max-width:768px){
+    .dept-names{
+        padding: 1.5rem;
+        overflow-x: auto;
+    }
+    .dept-names::-webkit-scrollbar {
+        width: 10px;
+    }
+    .dept-names::-webkit-scrollbar-thumb{
+        background-color: var(--border-light);
+    }
+    .join-team::after {
+        height: 3rem;
+    }
+}
+
+@media(max-width: 510px){
+    .teams-detail{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 4rem 0.7rem;
+    }
+    .dept-members{
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .join-team {
+        flex-direction: column;
+        text-align: center;
+    }
+    .join-btn{
+        width: 100%;
+    }
+}
+
+@media(max-width:468px){
+    .dept-names{
+        padding: 1.5rem;
+        overflow-x: auto;
+    }
+    .dept-names button {
+        font-size: 14px;
+    }
+    
+    
+}
+
+.tab__content {
+    display: none;
+}
+
+.tab__content.active {
+    display: grid;
 }

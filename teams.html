@@ -74,14 +74,14 @@
         <div class="container">
 
             <div class="dept-names">
-                <h5 class="active">Management Team</h5>
-                <h5>Nutritionists and Dietitians</h5>
-                <h5>Customer Support</h5>
-                <h5>Marketing and Communications</h5>
-                <h5>Technology and Development</h5>
+                <button data-tab="tab1" class="d-name active">Management Team</button>
+                <button data-tab="tab2" class="d-name">Nutritionists and Dietitians</button>
+                <button data-tab="tab3" class="d-name">Customer Support</button>
+                <button data-tab="tab4" class="d-name">Marketing and Communications</button>
+                <button data-tab="tab5" class="d-name">Technology and Development</button>
             </div>
 
-            <div class="teams-detail">
+            <div data-tab="tab1" class="teams-detail tab__content active" id="teams-details">
                 <div class="dept-members">
                     <div class="teams-img">
                         <img src="images/teams-image/teams1.png" alt="">
@@ -123,6 +123,11 @@
                 </div>
 
             </div>
+
+            <div data-tab="tab2" class="tab__content">Nutritionists and Dietitians</div>
+            <div data-tab="tab3" class="tab__content">Customer Support</div>
+            <div data-tab="tab4" class="tab__content">Marketing and Communications</div>
+            <div data-tab="tab5" class="tab__content">Technology and Development</div>
         </div>
      </section>
 
@@ -181,6 +186,36 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const departNames = document.querySelectorAll(".d-name")
+        const tabContents = document.querySelectorAll(".tab__content");
+
+        departNames.forEach((name) => {
+            name.addEventListener("click", () => {
+            removeName();
+            name.classList.add("active");
+
+            const targetedTab = name.getAttribute("data-tab");
+
+            tabContents.forEach((content) => {
+
+            const targetedContent = content.getAttribute("data-tab");
+
+            if (targetedTab === targetedContent) {
+                content.classList.add("active");
+            } else {
+                content.classList.remove("active");
+            }
+            });
+        });  
+        });
+
+        const removeName = (e) => {
+        departNames.forEach((name) => {
+            name.classList.remove("active");
+        });
+        };
+
+    </script>
 </body>
 </html>

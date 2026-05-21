@@ -186,6 +186,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .heading-content p{
     max-width: 1396px;
@@ -298,6 +299,17 @@ button {
     font-size: var(--small-text);
 }
 
+
+@media (max-width: 1600px){
+
+    .heading-image{
+        padding: 3rem;
+    }
+    .heading-section {
+        padding: 4rem;
+    }
+}
+
 @media (max-width: 1024px) {
 
     :root {
@@ -360,6 +372,9 @@ button {
     .nav-items a { 
         font-size: 1.05rem; 
     }
+    .heading-section {
+        padding: 2rem;
+    }
 
     /* ---- Footer ---- */
     .footer-main {
@@ -390,6 +405,14 @@ button {
     .nav-top p{
         font-size: 14px;
     }
+    .heading-image{
+        padding: 2rem;
+    }
+    .heading-section {
+        padding: 1rem;
+    }
+
+
     .footer-main { 
         padding: 20px 16px; 
     }
